@@ -1,0 +1,5 @@
+# raw data (too large for GitHub)
+data/raw/
+
+# optional
+*.csv
