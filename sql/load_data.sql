@@ -1,0 +1,3 @@
+-- Data loading
+-- CSV imported using DataGrip GUI
+-- LOAD DATA INFILE disabled due to MySQL secure-file-priv setting
