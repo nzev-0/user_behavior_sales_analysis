@@ -12,7 +12,7 @@ The goal of this project is to:
 Specifically, this project aims to analyze:
 - User conversion behavior across different actions (view → cart → purchase)
 - Time-based sales trends and seasonality patterns
-- Key business metrics such as conversion rate and average order value
+- Basic business metrics such as conversion rate and average order value
 
 This repository is designed as a **learning-oriented yet production-style** data analysis project, covering data preprocessing, exploratory data analysis (EDA), SQL analysis, and business intelligence visualization.
 
@@ -36,19 +36,22 @@ To reproduce this project:
 2. Manually create a `data/raw/` directory
 3. Place the downloaded files into `data/raw/`
 
+Due to the large scale of the dataset, some intermediate results exceed Excel’s row limitations.
+Therefore, Excel outputs in this project are based on aggregated or sampled data rather than the full dataset.
+
 > Note: The `data/raw/` directory is intentionally ignored by git and will not appear after cloning this repository.
 
 ## 3. Project Structure
 
 user_behavior_sales_analysis/
 ├── data/
-│   ├── raw/              # Raw data (ignored by git)
-│   └── processed/        # Cleaned and processed datasets
-├── notebooks/            # Jupyter notebooks for EDA
-├── sql/                  # SQL analysis scripts
-├── excel/                # Excel-based analysis (optional)
-├── power_bi/             # Power BI dashboards and reports
-├── requirements.txt      # Python dependencies
+│   ├── raw/               # Raw data (ignored by git)
+│   └── processed/         # Processed datasets (CSV outputs)
+├── notebooks/             # Jupyter notebooks (step-by-step learning and EDA)
+├── sql/                   # SQL scripts for data aggregation
+├── excel/                 # Excel summary outputs (business-ready tables)
+├── power_bi/              # Power BI dashboards and reports
+├── requirements.txt       # Python dependencies
 └── README.md
 
 ## 4. Tech Stack
@@ -70,3 +73,9 @@ user_behavior_sales_analysis/
 6. Visualization and dashboard creation
 7. Insight summary and business interpretation
 8. Documentation and project presentation for portfolio usage
+
+
+## Notes
+
+This project is continuously updated as part of an ongoing learning process.
+Some analysis steps and structures may be refined over time.
