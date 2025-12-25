@@ -63,16 +63,32 @@ user_behavior_sales_analysis/
 - **Business Intelligence**: Power BI
 - **Version Control**: Git & GitHub
 
-## 5. Analysis Pipeline
+## 5. Excel Analysis (Business Interpretation)
+
+The aggregated user segment results were exported to Excel for
+business-oriented analysis and interpretation.
+
+In Excel, the following analyses were performed:
+- Comparison of user distribution across segments
+- Revenue contribution analysis by user segment
+- Identification of high-value user impact
+
+Key insight:
+High-value users represent a relatively small proportion of total users
+but contribute a disproportionately large share of total revenue,
+indicating a typical Pareto-like distribution.
+
+
+## 6. Analysis Pipeline
 
 1. Data acquisition and storage
 2. Data cleaning and preprocessing
 3. Exploratory Data Analysis (EDA)
 4. User behavior analysis using SQL
 5. Sales metrics analysis
-6. Visualization and dashboard creation
-7. Insight summary and business interpretation
-8. Documentation and project presentation for portfolio usage
+6. Excel-based business interpretation
+7. Visualization and dashboard creation (Power BI)
+8. Insight summary and business interpretation
 
 
 ## Notes
