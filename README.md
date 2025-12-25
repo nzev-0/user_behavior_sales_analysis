@@ -2,44 +2,43 @@
 
 ## 1. Project Overview
 
-This project focuses on analyzing user behavior and sales data to explore purchasing patterns, user activity trends, and their relationships with business performance metrics.
+This project analyzes user behavior and sales data from an e-commerce platform, with a focus on understanding how user activity relates to purchasing behavior and revenue contribution.
 
-The goal of this project is to:
-- Practice a complete data analysis workflow
-- Transform raw transactional data into meaningful insights
-- Build a portfolio-ready data analysis project using real-world data
+The main objectives of this project are to:
+	•	Practice a complete end-to-end data analysis workflow
+	•	Apply SQL, Python (pandas), Excel, and Power BI in a single project
+	•	Transform raw transactional data into structured insights suitable for business interpretation
 
-Specifically, this project aims to analyze:
-- User conversion behavior across different actions (view → cart → purchase)
-- Time-based sales trends and seasonality patterns
-- Basic business metrics such as conversion rate and average order value
+Specifically, this project explores:
+	•	User behavior patterns across different action types (view, cart, purchase)
+	•	Aggregated user-level activity and purchase metrics
+	•	Differences in user value across predefined user segments
+	•	The relationship between user activity intensity and purchasing outcomes
 
-This repository is designed as a **learning-oriented yet production-style** data analysis project, covering data preprocessing, exploratory data analysis (EDA), SQL analysis, and business intelligence visualization.
+This repository is designed as a learning-oriented but structured data analysis project, covering data preprocessing, aggregation, exploratory analysis, and dashboard-based visualization.
 
 ## 2. Dataset
 
-The dataset used in this project comes from a real-world e-commerce user behavior dataset.
+The dataset used in this project comes from a real-world e-commerce user behavior dataset commonly used for educational and analytical purposes.
 
-Due to GitHub file size limitations, the **raw data files are not included** in this repository.
+Data Description
+	•	Records user actions such as product views, cart additions, and purchases
+	•	Includes user identifiers, timestamps, and action types
+	•	Large-scale transactional data suitable for aggregation-based analysis
 
-### Data Source
-- Public e-commerce user behavior dataset,the dataset is commonly used for user behavior analysis and educational purposes.
-- Contains user actions such as views, cart additions, and purchases
-- Time-based transactional records
+Data Access
 
-### Data Access
+Due to GitHub file size limitations, raw data files are not included in this repository.
 
-Due to GitHub file size limitations, raw data files are excluded from version control.
+To reproduce the analysis:
+	1.	Download the raw dataset from the original public source
+	2.	Manually create a data/raw/ directory
+	3.	Place the downloaded files into data/raw/
 
-To reproduce this project:
-1. Download the raw dataset from the original source
-2. Manually create a `data/raw/` directory
-3. Place the downloaded files into `data/raw/`
+Note: The data/raw/ directory is intentionally ignored by git and will not appear after cloning this repository.
 
-Due to the large scale of the dataset, some intermediate results exceed Excel’s row limitations.
-Therefore, Excel outputs in this project are based on aggregated or sampled data rather than the full dataset.
-
-> Note: The `data/raw/` directory is intentionally ignored by git and will not appear after cloning this repository.
+Because of the dataset’s scale, some intermediate results exceed Excel’s row limits.
+As a result, Excel files in this project are based on aggregated user-level summaries rather than raw event-level data.
 
 ## 3. Project Structure
 
@@ -58,40 +57,53 @@ user_behavior_sales_analysis/
 
 - **Programming Language**: Python
 - **Data Analysis**: pandas, numpy
-- **Visualization**: matplotlib, seaborn
 - **Database & Query**: SQL
+- **Busioness Analysis**: Excel
 - **Business Intelligence**: Power BI
 - **Version Control**: Git & GitHub
 
-## 5. Excel Analysis (Business Interpretation)
 
-The aggregated user segment results were exported to Excel for
-business-oriented analysis and interpretation.
+## 5. The project follows a structured analysis pipeline:
+	1.	Data acquisition and local storage
+	2.	Data cleaning and preprocessing using pandas
+	3.	Exploratory Data Analysis (EDA) in Jupyter notebooks
+	4.	User-level behavior and sales aggregation using SQL
+	5.	Export of aggregated results to CSV and Excel
+	6.	Business-oriented analysis in Excel
+	7.	Dashboard creation and visualization using Power BI
+	8.	Summary of insights and interpretation
+
+
+## 6. Excel Analysis (Business Interpretation)
+
+Aggregated user-level results were exported to Excel for business-focused analysis.
 
 In Excel, the following analyses were performed:
-- Comparison of user distribution across segments
-- Revenue contribution analysis by user segment
-- Identification of high-value user impact
+	•	User distribution across different user segments
+	•	Revenue contribution by user segment
+	•	Comparison of user activity and purchasing outcomes
 
-Key insight:
-High-value users represent a relatively small proportion of total users
-but contribute a disproportionately large share of total revenue,
-indicating a typical Pareto-like distribution.
+A key observation from the Excel analysis is that:
+	•	High-value users represent a smaller portion of the total user base
+	•	However, they contribute a disproportionately large share of total revenue
 
+This result reflects a typical uneven value distribution often observed in e-commerce platforms.
 
-## 6. Analysis Pipeline
+## 7. Power BI Dashboard
 
-1. Data acquisition and storage
-2. Data cleaning and preprocessing
-3. Exploratory Data Analysis (EDA)
-4. User behavior analysis using SQL
-5. Sales metrics analysis
-6. Excel-based business interpretation
-7. Visualization and dashboard creation (Power BI)
-8. Insight summary and business interpretation
+The final analysis results are presented using an interactive Power BI dashboard built on aggregated user-level data.
+
+The dashboard includes the following visualizations:
+	•	User Count by Segment: distribution of users across value segments
+	•	Total Revenue by User Segment: comparison of revenue contribution
+	•	User Activity vs Purchase Behavior: scatter plot showing the relationship between total user events and purchase count, colored by user segment
+
+These visualizations help connect user activity intensity with purchasing outcomes and highlight behavioral differences across user segments.
+
+A preview of the dashboard is shown below:The complete interactive report is available in the repository as a .pbix file.
 
 
 ## Notes
 
-This project is continuously updated as part of an ongoing learning process.
-Some analysis steps and structures may be refined over time.
+This project is part of an ongoing learning process.
+Some analysis steps and structure may be refined or extended as skills and understanding improve.
